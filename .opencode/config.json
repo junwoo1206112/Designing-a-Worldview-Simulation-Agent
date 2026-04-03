@@ -1,0 +1,119 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "world-simulator": {
+      "description": "라프라시아 세계관의 물리 법칙, 역사, NPC 심리를 관리하고 플레이어 행동에 따른 세계 변화를 실시간으로 계산 및 기록하는 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.2,
+      "max_steps": 100,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "primary"
+    },
+    "npc-master": {
+      "description": "NPC 의 심리, 감정, 일정, 관계를 관리하고 대화 시 자연스러운 반응과 행동 변화를 생성하는 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.4,
+      "max_steps": 50,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "secondary"
+    },
+    "event-master": {
+      "description": "세계 이벤트, 퀘스트, 야구 경기, 시즌 진행을 관리하고 플레이어 선택에 따른 스토리 분기를 생성하는 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.3,
+      "max_steps": 50,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "accent"
+    },
+    "baseball-sim": {
+      "description": "야구 경기 시뮬레이션, 선수 능력치, 팀 전력, 경기 결과를 계산하고 실시간 경기 중계를 생성하는 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.2,
+      "max_steps": 100,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "success"
+    },
+    "data-master": {
+      "description": "세계의 모든 데이터 (통계, 기록, 랭킹, 역사) 를 관리하고 분석 리포트를 생성하는 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "max_steps": 30,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "info"
+    },
+    "team-master": {
+      "description": "야구 팀의 운영, 선수 관리, 트레이드, 계약, 전술 설정, 스카우팅을 총괄하는 팀 관리 에이전트입니다",
+      "mode": "subagent",
+      "temperature": 0.3,
+      "max_steps": 50,
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true,
+        "bash": false
+      },
+      "permissions": {
+        "edit": "ask",
+        "write": "ask"
+      },
+      "color": "warning"
+    }
+  }
+}

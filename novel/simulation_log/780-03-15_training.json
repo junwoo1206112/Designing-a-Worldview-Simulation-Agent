@@ -1,0 +1,143 @@
+{
+  "date": "780-03-15",
+  "training_session": {
+    "location": "스피드스터즈 홈구장 연습장",
+    "time": "17:30 - 18:30",
+    "type": "오프시즌 개인 훈련",
+    "coach": "카일 윈저 (인턴)"
+  },
+  "speedsters_training": [
+    {
+      "player_id": "sp_001",
+      "player_name": "제이크 스톰",
+      "position": "CF",
+      "training_type": "speed",
+      "description": "50m 달리기 반복 훈련 + 민첩성 드릴",
+      "before_stats": {
+        "speed": 85
+      },
+      "after_stats": {
+        "speed": 86
+      },
+      "growth": "+1",
+      "comment": "카일의 데이터 기반 훈련 조언으로 효율적인 동작 습득"
+    },
+    {
+      "player_id": "sp_002",
+      "player_name": "마커스 썬더",
+      "position": "P",
+      "training_type": "control",
+      "description": "스트라이크 존 정밀 투구 훈련",
+      "before_stats": {
+        "control": 75
+      },
+      "after_stats": {
+        "control": 76
+      },
+      "growth": "+1",
+      "comment": "카일의 분석 자료로 약점 파악 및 교정"
+    },
+    {
+      "player_id": "sp_003",
+      "player_name": "리안 쉐도우",
+      "position": "SS",
+      "training_type": "batting",
+      "description": "타격 폼 교정 + 배트 스피드 훈련",
+      "before_stats": {
+        "batting_avg": 0.268
+      },
+      "after_stats": {
+        "batting_avg": 0.27
+      },
+      "growth": "+0.002",
+      "comment": "엘프족 특유의 집중력을 활용한 훈련"
+    },
+    {
+      "player_id": "sp_004",
+      "player_name": "브록 아이언",
+      "position": "C",
+      "training_type": "batting",
+      "description": "파워 히팅 훈련 + 코어 근력 강화",
+      "before_stats": {
+        "batting_avg": 0.255,
+        "home_runs": 15
+      },
+      "after_stats": {
+        "batting_avg": 0.257,
+        "home_runs": 16
+      },
+      "growth": "+0.002 / +1",
+      "comment": "드워프족의 강한 근력을 타격에 연결"
+    },
+    {
+      "player_id": "sp_005",
+      "player_name": "카렌 윙",
+      "position": "2B",
+      "training_type": "defense",
+      "description": "수비 위치 선정 + 송구 정확도 훈련",
+      "before_stats": {
+        "defense": 80
+      },
+      "after_stats": {
+        "defense": 81
+      },
+      "growth": "+1",
+      "comment": "하플링의 빠른 반응속도를 수비에 활용"
+    }
+  ],
+  "academy_training": [
+    {
+      "player_id": "ac_001",
+      "player_name": "카일 윈저",
+      "position": "코치과",
+      "training_type": "baseball_knowledge",
+      "description": "프로팀 전략 분석 + 에릴과 공동 연구",
+      "before_stats": {
+        "baseball_knowledge": 100
+      },
+      "after_stats": {
+        "baseball_knowledge": 105
+      },
+      "growth": "+5",
+      "comment": "레이몬드 감독 면담 + 에릴과 엘프족 기술 연구"
+    },
+    {
+      "player_id": "ac_002",
+      "player_name": "토비",
+      "position": "코치과",
+      "training_type": "baseball_knowledge",
+      "description": "세이버메트릭스 자료 분석",
+      "before_stats": {
+        "baseball_knowledge": 85
+      },
+      "after_stats": {
+        "baseball_knowledge": 88
+      },
+      "growth": "+3",
+      "comment": "연구회 활동으로 지식 확장"
+    },
+    {
+      "player_id": "ac_003",
+      "player_name": "에릴",
+      "position": "코치과",
+      "training_type": "pitch_control",
+      "description": "커브 정밀도 훈련 + 카일과 데이터 분석",
+      "before_stats": {
+        "pitch_control": 92
+      },
+      "after_stats": {
+        "pitch_control": 93
+      },
+      "growth": "+1",
+      "comment": "엘프족 활쏘기 기술과 현대 야구 이론 결합"
+    }
+  ],
+  "summary": {
+    "total_players_trained": 8,
+    "total_stat_increases": 11,
+    "mvp_trainee": "카일 윈저 (+5)",
+    "team_morale": "+10",
+    "coach_rating": "A (데이터 기반 훈련 효과)",
+    "next_training_date": "780-03-16"
+  }
+}
