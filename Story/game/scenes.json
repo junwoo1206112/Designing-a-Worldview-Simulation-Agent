@@ -1,0 +1,736 @@
+{
+  "scenes": {
+    "intro_001": {
+      "id": "intro_001",
+      "title": "새로운 아침",
+      "location": "아카데미 기숙사",
+      "time_of_day": "morning",
+      "description": "아침 햇살이 기숙사 창문을 통해 들어옵니다. 어제는 라프라시아 야구 연구회 제 1 회 미팅이 있었습니다. 에릴의 투구 분석과 토비의 통계 연구, 그리고 인턴십 준비까지. 오늘은 무엇을 할까요?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "아카데미 도서관으로 가서 에릴과 토비를 만난다",
+          "effect": {
+            "affinity_changes": {"에릴": 5, "토비": 5},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10
+          },
+          "next_scene": "library_meeting_001"
+        },
+        {
+          "id": "c2",
+          "text": "스피드스터즈 구장으로 가서 레이몬드 감독을 만난다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 10},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 5
+          },
+          "next_scene": "speedsters_visit_001"
+        },
+        {
+          "id": "c3",
+          "text": "아카데미 훈련장에서 개인 훈련을 한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 3,
+            "stamina_cost": 20,
+            "mood_change": -5
+          },
+          "next_scene": "training_001"
+        },
+        {
+          "id": "c4",
+          "text": "퀵 홈 시티 중심가를 산책한다",
+          "effect": {
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 15
+          },
+          "next_scene": "city_walk_001"
+        }
+      ]
+    },
+    "library_meeting_001": {
+      "id": "library_meeting_001",
+      "title": "연구회 미팅",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "도서관 2 층 연구실에 도착했습니다. 에릴은 창가에서 공을 들고 무언가 생각에 잠겨있고, 토비는 책상 위에 여러 통계 자료를 펼쳐놓고 있습니다. \"왔어, 카일! 오늘 어떤 연구를 할까?\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "에릴의 투구 폼을 분석하고 피드백을 준다",
+          "effect": {
+            "affinity_changes": {"에릴": 10},
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 10
+          },
+          "next_scene": "pitch_analysis_001"
+        },
+        {
+          "id": "c2",
+          "text": "토비와 함께 세이버메트릭스 연구를 한다",
+          "effect": {
+            "affinity_changes": {"토비": 10},
+            "stat_changes": {"baseball_knowledge": 5},
+            "time_hours": 3,
+            "stamina_cost": 15,
+            "mood_change": 5
+          },
+          "next_scene": "saber_research_001"
+        },
+        {
+          "id": "c3",
+          "text": "다음 미팅 일정을 정하고 헤어진다",
+          "effect": {
+            "affinity_changes": {"에릴": 3, "토비": 3},
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "speedsters_visit_001": {
+      "id": "speedsters_visit_001",
+      "title": "스피드스터즈 구장",
+      "location": "스피드스터즈 홈구장",
+      "time_of_day": "afternoon",
+      "description": "스피드스터즈 홈구장에 도착했습니다. 선수들이 그라운드에서 훈련 중이고, 레이몬드 감독이 클립보드를 들고 지시를 내리고 있습니다. 감독이 당신을 보고 손을 흔듭니다. \"카일! 인턴십 준비는 잘 되어가고 있나?\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "레이몬드 감독과 인턴십 계획을 논의한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 15},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 10
+          },
+          "next_scene": "internship_discussion_001"
+        },
+        {
+          "id": "c2",
+          "text": "스피드스터즈 선수들의 훈련을 관찰한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 3,
+            "stamina_cost": 15,
+            "mood_change": 5
+          },
+          "next_scene": "training_observation_001"
+        },
+        {
+          "id": "c3",
+          "text": "아카데미로 돌아간다",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "training_001": {
+      "id": "training_001",
+      "title": "개인 훈련",
+      "location": "아카데미 훈련장",
+      "time_of_day": "afternoon",
+      "description": "훈련장에 도착했습니다. 땀 냄새와 함께 공이 배트에 맞는 소리가 울려퍼집니다. 오늘 어떤 훈련을 할까요?",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "전술 이론 공부 (지식 +3)",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": -5
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "투구 분석 연습 (지식 +2, 체력 -15)",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 15,
+            "mood_change": -3
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c3",
+          "text": "휴식한다 (체력 +20)",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": -20,
+            "mood_change": 10
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "city_walk_001": {
+      "id": "city_walk_001",
+      "title": "퀵 홈 시티 산책",
+      "location": "퀵 홈 시티 중심가",
+      "time_of_day": "afternoon",
+      "description": "도시 중심가에는 다양한 사람들이 모여있습니다. 마법 상점의 조명과 증기 기관의 소리가 어우러진 활기찬 거리입니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "야구 용품점에 들른다",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10,
+            "items_added": ["새로운 전략 노트"]
+          },
+          "next_scene": "shop_visit_001"
+        },
+        {
+          "id": "c2",
+          "text": "시민들과 야구 이야기를 나눈다",
+          "effect": {
+            "affinity_changes": {"올리버": 5},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10
+          },
+          "next_scene": "citizen_talk_001"
+        },
+        {
+          "id": "c3",
+          "text": "아카데미로 돌아간다",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "pitch_analysis_001": {
+      "id": "pitch_analysis_001",
+      "title": "투구 분석",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "에릴의 투구 폼을 자세히 분석합니다. 엘프족 특유의 정교한 손목 스냅이 커브의 회전수를 높여주고 있습니다. \"여기, 릴리스 포인트를 조금만 낮추면 더 좋은 각도가 나올 것 같아.\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "실제 투구 연습을 시켜본다",
+          "effect": {
+            "affinity_changes": {"에릴": 5},
+            "time_hours": 2,
+            "stamina_cost": 15,
+            "mood_change": 5
+          },
+          "next_scene": "pitch_practice_001"
+        },
+        {
+          "id": "c2",
+          "text": "데이터로만 분석을 마친다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "saber_research_001": {
+      "id": "saber_research_001",
+      "title": "세이버메트릭스 연구",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "토비와 함께 타자의 출루율을 분석합니다. \"카일, 이 데이터를 보면 알 수 있어. 단순한 타율보다 장타율과 볼넷이 더 중요해!\" 토비의 눈이 흥분으로 빛나고 있습니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "OPS(출루율 + 장타율) 개념을 설명한다",
+          "effect": {
+            "affinity_changes": {"토비": 10},
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 10
+          },
+          "next_scene": "ops_discussion_001"
+        },
+        {
+          "id": "c2",
+          "text": "함께 계산을 계속한다",
+          "effect": {
+            "affinity_changes": {"토비": 5},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "internship_discussion_001": {
+      "id": "internship_discussion_001",
+      "title": "인턴십 논의",
+      "location": "스피드스터즈 감독실",
+      "time_of_day": "afternoon",
+      "description": "감독실에는 스피드스터즈의 전술 보드가 펼쳐져 있습니다. \"4 월 1 일부터 시작이야. 주로 상대 팀 분석과 데이터 정리를 도와주면 돼. 기대하고 있네, 카일.\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "감사의 인사를 드린다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 5},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 15
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "구체적인 업무를 질문한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 10},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 5
+          },
+          "next_scene": "work_details_001"
+        }
+      ]
+    },
+    "training_observation_001": {
+      "id": "training_observation_001",
+      "title": "훈련 관찰",
+      "location": "스피드스터즈 그라운드",
+      "time_of_day": "afternoon",
+      "description": "제이크 스톰의 타격 연습을 지켜봅니다. 빠른 스윙 스피드가 인상적입니다. 리안 쉐도우는 수비 위치 조정 연습 중입니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "제이크의 스윙을 분석한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "리안의 수비 위치를 관찰한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c3",
+          "text": "전체 훈련을 종합적으로 분석한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 4},
+            "time_hours": 3,
+            "stamina_cost": 20,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "shop_visit_001": {
+      "id": "shop_visit_001",
+      "title": "야구 용품점",
+      "location": "퀵 홈 시티 중심가",
+      "time_of_day": "afternoon",
+      "description": "리리가 운영하는 마법 야구장비 상점입니다. 정교하게 제작된 글러브와 배트들이 진열되어 있습니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "전략 노트를 구매한다 (10 골드)",
+          "effect": {
+            "items_added": ["고급 전략 노트"],
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "리리와 야구 장비를 이야기한다",
+          "effect": {
+            "affinity_changes": {"리리": 5},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c3",
+          "text": "나중에 다시 온다",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "citizen_talk_001": {
+      "id": "citizen_talk_001",
+      "title": "시민과의 대화",
+      "location": "퀵 홈 시티 중심가",
+      "time_of_day": "afternoon",
+      "description": "야구 해설가 올리버와 이야기를 나눕니다. \"이번 시즌 스피드스터즈, 꽤 기대할 만해. 새로운 전술 코치가 온다며?\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "인턴십 이야기를 해준다",
+          "effect": {
+            "affinity_changes": {"올리버": 10},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "야구 분석 이야기를 나눈다",
+          "effect": {
+            "affinity_changes": {"올리버": 5},
+            "stat_changes": {"baseball_knowledge": 1},
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "pitch_practice_001": {
+      "id": "pitch_practice_001",
+      "title": "투구 연습",
+      "location": "아카데미 연습장",
+      "time_of_day": "morning",
+      "description": "에릴이 조언을 바탕으로 투구 연습을 합니다. 공의 궤적이 조금씩 변하고 있습니다. \"이거야... 느낌이 와!\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "더 자세한 피드백을 준다",
+          "effect": {
+            "affinity_changes": {"에릴": 5},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 15,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "연습을 마치고 휴식한다",
+          "effect": {
+            "affinity_changes": {"에릴": 3},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "ops_discussion_001": {
+      "id": "ops_discussion_001",
+      "title": "OPS 논의",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "토비가 OPS 개념을 이해하고 흥분하고 있습니다. \"이거야! 이걸로 선수를 평가하면 훨씬 정확해지겠어!\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "WAR 개념도 소개한다",
+          "effect": {
+            "affinity_changes": {"토비": 15},
+            "stat_changes": {"baseball_knowledge": 5},
+            "time_hours": 3,
+            "stamina_cost": 20,
+            "mood_change": 10
+          },
+          "next_scene": "war_discussion_001"
+        },
+        {
+          "id": "c2",
+          "text": "실제 데이터로 적용해본다",
+          "effect": {
+            "affinity_changes": {"토비": 10},
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 15
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "work_details_001": {
+      "id": "work_details_001",
+      "title": "업무 세부 사항",
+      "location": "스피드스터즈 감독실",
+      "time_of_day": "afternoon",
+      "description": "감독이 상세한 업무 내용을 설명합니다. \"상대 투수의 구질별 성공률, 타자의 존별 타율... 이런 것들을 분석해주면 돼.\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "메모하며 경청한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 5},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "질문을 하고 이해를 확인한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 10},
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 3,
+            "stamina_cost": 15
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "war_discussion_001": {
+      "id": "war_discussion_001",
+      "title": "WAR 논의",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "토비가 WAR(대체 선수 대비 승리 기여도) 개념에 완전히 매료되었습니다. \"이거... 이거 혁명이야!\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "연구회 공식 연구 주제로 제안한다",
+          "effect": {
+            "affinity_changes": {"토비": 10, "에릴": 5},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 15
+          },
+          "next_scene": "research_topic_001"
+        },
+        {
+          "id": "c2",
+          "text": "다음 미팅 때까지 공부해오라고 한다",
+          "effect": {
+            "affinity_changes": {"토비": 5},
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "research_topic_001": {
+      "id": "research_topic_001",
+      "title": "연구 주제 설정",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "라프라시아 야구 연구회의 첫 공식 연구 주제가 정해졌습니다. 'WAR 를 활용한 선수 가치 평가'. 에릴도 흥미로운 표정입니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "에릴의 WAR 를 계산해본다",
+          "effect": {
+            "affinity_changes": {"에릴": 10, "토비": 5},
+            "stat_changes": {"baseball_knowledge": 5},
+            "time_hours": 3,
+            "stamina_cost": 20,
+            "mood_change": 10
+          },
+          "next_scene": "eril_war_001"
+        },
+        {
+          "id": "c2",
+          "text": "스피드스터즈 선수들의 WAR 를 분석한다",
+          "effect": {
+            "affinity_changes": {"토비": 10},
+            "stat_changes": {"baseball_knowledge": 5},
+            "time_hours": 3,
+            "stamina_cost": 20
+          },
+          "next_scene": "team_war_001"
+        }
+      ]
+    },
+    "eril_war_001": {
+      "id": "eril_war_001",
+      "title": "에릴의 WAR 분석",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "에릴의 투구 데이터를 바탕으로 WAR 를 계산합니다. 놀라운 수치가 나옵니다. \"에릴, 너 프로에서도 통할 거야.\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "에릴에게 결과를 보여준다",
+          "effect": {
+            "affinity_changes": {"에릴": 20},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 20
+          },
+          "next_scene": "eril_reaction_001"
+        },
+        {
+          "id": "c2",
+          "text": "조금 더 분석을 계속한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "eril_reaction_001": {
+      "id": "eril_reaction_001",
+      "title": "에릴의 반응",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "에릴의 눈이 빛나고 있습니다. \"정말... 프로에서 뛸 수 있을까?\" 자신감이 샘솟는 표정입니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "자신감을 북돋아준다",
+          "effect": {
+            "affinity_changes": {"에릴": 15},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 15
+          },
+          "next_scene": "intro_001",
+          "unlock_event": "eril_confidence_boost"
+        },
+        {
+          "id": "c2",
+          "text": "구체적인 훈련 계획을 세운다",
+          "effect": {
+            "affinity_changes": {"에릴": 10},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 5
+          },
+          "next_scene": "training_plan_001"
+        }
+      ]
+    },
+    "team_war_001": {
+      "id": "team_war_001",
+      "title": "팀 WAR 분석",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "스피드스터즈 선수들의 WAR 를 분석합니다. 제이크 스톰이 팀 내 최고 WAR 를 기록 중입니다.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "분석 결과를 정리한다",
+          "effect": {
+            "stat_changes": {"baseball_knowledge": 3},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "레이몬드 감독에게 보고한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 15},
+            "time_hours": 2,
+            "stamina_cost": 10,
+            "mood_change": 10
+          },
+          "next_scene": "report_to_raymond_001"
+        }
+      ]
+    },
+    "report_to_raymond_001": {
+      "id": "report_to_raymond_001",
+      "title": "감독에게 보고",
+      "location": "스피드스터즈 감독실",
+      "time_of_day": "afternoon",
+      "description": "분석 결과를 들은 레이몬드 감독이 감탄합니다. \"이런 분석이라니... 카일, 자네 정말 대단해.\"",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "인턴십 시작을 기다린다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 5},
+            "time_hours": 1,
+            "stamina_cost": 5,
+            "mood_change": 10
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "추가 분석을 제안한다",
+          "effect": {
+            "affinity_changes": {"레이몬드": 10},
+            "stat_changes": {"baseball_knowledge": 2},
+            "time_hours": 2,
+            "stamina_cost": 10
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    },
+    "training_plan_001": {
+      "id": "training_plan_001",
+      "title": "훈련 계획",
+      "location": "아카데미 도서관",
+      "time_of_day": "morning",
+      "description": "에릴을 위한 구체적인 훈련 계획이 세워졌습니다. 주 3 회 투구 연습, 주 1 회 데이터 분석 미팅.",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "훈련을 시작한다",
+          "effect": {
+            "affinity_changes": {"에릴": 5},
+            "time_hours": 3,
+            "stamina_cost": 20,
+            "mood_change": 5
+          },
+          "next_scene": "intro_001"
+        },
+        {
+          "id": "c2",
+          "text": "일정을 조정한다",
+          "effect": {
+            "time_hours": 1,
+            "stamina_cost": 5
+          },
+          "next_scene": "intro_001"
+        }
+      ]
+    }
+  }
+}

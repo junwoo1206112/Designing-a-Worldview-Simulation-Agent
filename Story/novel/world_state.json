@@ -1,0 +1,548 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "780-03-15",
+    "save_slot": "main"
+  },
+  "world_info": {
+    "continent": "라프라시아",
+    "current_year": 780,
+    "current_season": "spring",
+    "current_date": "780-03-16",
+    "current_time": "15:30",
+    "weather": "sunny",
+    "temperature": 18
+  },
+  "player": {
+    "name": "카일 윈저",
+    "age": 8,
+    "race": "휴먼",
+    "nationality": "하플랜드 왕국",
+    "current_location": "퀵 홈 시티, 하플랜드 로얄 야구 아카데미",
+    "position": "코치과 입학생",
+    "stats": {
+      "str": 5,
+      "dex": 6,
+      "int": 15,
+      "cha": 8,
+      "baseball_knowledge": 108
+    },
+    "reputation": {
+      "academy": 25,
+      "general": 5
+    },
+    "inventory": [
+      "야구 전략 노트",
+      "아카데미 입학증",
+      "가족 사진",
+      "훈련 일지 (780-03-15)"
+    ],
+    "skills": [
+      "현대 야구 전략",
+      "세이버메트릭스",
+      "데이터 분석",
+      "종족학",
+      "엘프족 투구 기술",
+      "프로팀 전략 운영",
+      "데이터 기반 코칭",
+      "맞춤 훈련 프로그램 개발"
+    ],
+    "relationships": {
+      "토비": {
+        "type": "friend",
+        "affinity": 72,
+        "description": "하플링 동급생, 통계학에 관심, 라프라시아 야구 연구회 멤버"
+      },
+      "그리폰": {
+        "type": "mentor",
+        "affinity": 40,
+        "description": "코치과 주임강사"
+      },
+      "레이몬드": {
+        "type": "professional",
+        "affinity": 25,
+        "description": "스피드스터즈 감독, 인턴십 제안, 카일의 능력을 기대 중"
+      },
+      "에릴": {
+        "type": "friend",
+        "affinity": 100,
+        "description": "엘프 선수, 정교한 커브 구사자, 라프라시아 야구 연구회 멤버, 프로 스카우트 대상"
+      }
+    },
+    "condition": {
+      "stamina": 88,
+      "mood": 198,
+      "status": "보람참 (생산적 미팅 완료)"
+    }
+  },
+    "reputation": {
+      "academy": 15,
+      "general": 0
+    },
+    "inventory": [
+      "야구 전략 노트",
+      "아카데미 입학증",
+      "가족 사진"
+    ],
+    "skills": [
+      "현대 야구 전략",
+      "세이버메트릭스",
+      "데이터 분석",
+      "종족학",
+      "엘프족 투구 기술",
+      "프로팀 전략 운영"
+    ],
+    "relationships": {
+      "토비": {
+        "type": "friend",
+        "affinity": 65,
+        "description": "하플링 동급생, 통계학에 관심, 라프라시아 야구 연구회 멤버"
+      },
+      "그리폰": {
+        "type": "mentor",
+        "affinity": 40,
+        "description": "코치과 주임강사"
+      },
+      "레이몬드": {
+        "type": "professional",
+        "affinity": 25,
+        "description": "스피드스터즈 감독, 인턴십 제안, 카일의 능력을 기대 중"
+      },
+      "에릴": {
+        "type": "friend",
+        "affinity": 80,
+        "description": "엘프 선수, 정교한 커브 구사자, 라프라시아 야구 연구회 멤버, 프로 스카우트 대상"
+      }
+    }
+  },
+    "npcs": {
+    "active_npcs": [
+      {
+        "id": "toby_001",
+        "name": "토비",
+        "race": "하플링",
+        "age": 9,
+        "location": "퀵 홈 시티, 하플랜드 로얄 야구 아카데미",
+        "status": "active",
+        "current_activity": "수업 중",
+        "schedule": {
+          "morning": "수업",
+          "afternoon": "수업",
+          "evening": "자율학습"
+        }
+      },
+      {
+        "id": "griffon_001",
+        "name": "그리폰",
+        "race": "휴먼",
+        "age": 52,
+        "location": "퀵 홈 시티, 하플랜드 로얄 야구 아카데미",
+        "status": "active",
+        "current_activity": "강의 중",
+        "schedule": {
+          "morning": "강의",
+          "afternoon": "강의",
+          "evening": "서류작업"
+        }
+      },
+      {
+        "id": "raymond_001",
+        "name": "레이몬드",
+        "race": "휴먼",
+        "age": 45,
+        "location": "퀵 홈 시티, 스피드스터즈 홈구장",
+        "status": "active",
+        "current_activity": "훈련 종료 및 사무실 복귀",
+        "schedule": {
+          "morning": "훈련",
+          "afternoon": "경기/전략회의",
+          "evening": "팀 관리"
+        },
+        "availability": "구장 내 사무실 (카일 방문 시 대화 가능)"
+      },
+      {
+        "id": "citizen_001",
+        "name": "올리버",
+        "race": "휴먼",
+        "age": 34,
+        "location": "퀵 홈 시티 중심가",
+        "status": "active",
+        "current_activity": "산책 중",
+        "occupation": "야구 해설가",
+        "personality": "수다스럽고 야구에 박식함"
+      },
+      {
+        "id": "citizen_002",
+        "name": "리리",
+        "race": "엘프",
+        "age": 87,
+        "location": "퀵 홈 시티 중심가",
+        "status": "active",
+        "current_activity": "쇼핑 중",
+        "occupation": "마법 야구장비 상점 주인",
+        "personality": "차분하고 정교한 장비를 선호"
+      },
+      {
+        "id": "citizen_003",
+        "name": "브론",
+        "race": "드워프",
+        "age": 156,
+        "location": "퀵 홈 시티 중심가",
+        "status": "active",
+        "current_activity": "음료 마시는 중",
+        "occupation": "전통 주조장 운영",
+        "personality": "호탕하고 스피드스터즈 팬"
+      },
+      {
+        "id": "student_001",
+        "name": "에릴",
+        "race": "엘프",
+        "age": 62,
+        "appearance_age": 8,
+        "location": "퀵 홈 시티, 하플랜드 로얄 야구 아카데미",
+        "status": "active",
+        "current_activity": "카일과 함께 이동 중",
+        "grade": "코치과 1 학년",
+        "personality": "차분하고 관찰력이 뛰어남",
+        "specialty": "커브 구사 (정교한 제구력)",
+        "background": "엘프족 전통 활쏘기에서 익힌 정밀한 컨트롤을 야구에 적용",
+        "relationships": {
+          "카일": "연구 파트너",
+          "토비": "새로운 친구"
+        }
+      }
+    ],
+    "inactive_npcs": []
+  },
+  "locations": {
+    "current_region": "하플랜드 왕국",
+    "current_city": "퀵 홈 시티",
+    "current_building": "하플랜드 로얄 야구 아카데미",
+    "current_room": "아카데미 도서관 2 층 연구실 (미팅 종료)",
+    "nearby_locations": [
+      "아카데미 도서관",
+      "아카데미 기숙사",
+      "퀵 홈 시티 중심가",
+      "스피드스터즈 홈구장",
+      "야구 통계 연구소"
+    ],
+    "unlocked_regions": [
+      "하플랜드 왕국"
+    ],
+    "locked_regions": [
+      "아스테르 왕국",
+      "아이언 포지 왕국",
+      "실바니아 연방",
+      "오크랜드 자치령",
+      "썬더 폴트 공국",
+      "켄타우리아 연합"
+    ]
+  },
+  "events": {
+    "completed_events": [
+      {
+        "id": "ev_001",
+        "name": "아카데미 입학",
+        "date": "780-03-01",
+        "description": "하플랜드 로얄 야구 아카데미 코치과 입학"
+      },
+      {
+        "id": "ev_002",
+        "name": "첫 수업",
+        "date": "780-03-02",
+        "description": "첫 수업에서 야구 전략 질문으로 주목받음"
+      },
+      {
+        "id": "ev_003",
+        "name": "전략 과제 승리",
+        "date": "780-03-08",
+        "description": "수비 시프트와 타순 최적화로 과제 승리"
+      },
+      {
+        "id": "ev_004",
+        "name": "LMB 주목",
+        "date": "780-03-10",
+        "description": "LMB 에서 전략 코치 인턴십 제안"
+      },
+      {
+        "id": "ev_008",
+        "name": "라프라시아 야구 연구회 창설",
+        "date": "780-03-15",
+        "description": "카일, 토비, 에릴 3 인이 야구 연구 모임 결성"
+      },
+      {
+        "id": "ev_009",
+        "name": "에릴 선수 전향",
+        "date": "780-03-15",
+        "description": "에릴, 코치과에서 야구부 선수 (투수) 로 전향"
+      },
+      {
+        "id": "ev_010",
+        "name": "에릴 전용 훈련 프로그램 개발",
+        "date": "780-03-15",
+        "description": "카일, 에릴을 위한 데이터 기반 맞춤 훈련 프로그램 작성 및 코칭"
+      },
+      {
+        "id": "ev_011",
+        "name": "라프라시아 야구 연구회 제 1 회 미팅",
+        "date": "780-03-16",
+        "description": "연구회 첫 공식 미팅, 향후 훈련 계획 및 프로 스카우트 전략 수립"
+      }
+    ],
+    "active_events": [
+      {
+        "id": "ev_005",
+        "name": "인턴십 준비",
+        "date": "780-03-15",
+        "description": "스피드스터즈 전략 코치 인턴십 시작 준비",
+        "deadline": "780-04-01"
+      }
+    ],
+    "upcoming_events": [
+      {
+        "id": "ev_006",
+        "name": "인턴십 시작",
+        "date": "780-04-01",
+        "description": "하플랜드 스피드스터즈 전략 코치 인턴십 시작"
+      },
+      {
+        "id": "ev_007",
+        "name": "아마추어 리그 개막",
+        "date": "780-04-15",
+        "description": "하플랜드 왕국 아마추어 야구 리그 개막"
+      }
+    ]
+  },
+  "world_status": {
+    "political": {
+      "stability": 85,
+      "tensions": [],
+      "alliances": ["하플랜드 - 켄타우리아 무역동맹"]
+    },
+    "baseball": {
+      "current_season": "preseason",
+      "lmb_standings": [],
+      "notable_games": [],
+      "top_teams": [
+        "하플랜드 스피드스터즈",
+        "아스테르 로열스",
+        "아이언 마이너스"
+      ],
+      "training_system": {
+        "enabled": true,
+        "growth_rate": "normal",
+        "last_training_date": "780-03-15"
+      }
+    },
+    "team_rosters": {
+      "speedsters": {
+        "team_name": "하플랜드 스피드스터즈",
+        "players": [
+          {
+            "id": "sp_001",
+            "name": "제이크 스톰",
+            "position": "CF",
+            "age": 28,
+            "race": "휴먼",
+            "stats": {
+              "batting_avg": 0.285,
+              "home_runs": 18,
+              "rbi": 72,
+              "speed": 86,
+              "defense": 78
+            },
+            "training_focus": "speed",
+            "potential": 88,
+            "last_trained": "780-03-15"
+          },
+          {
+            "id": "sp_002",
+            "name": "마커스 썬더",
+            "position": "P",
+            "age": 26,
+            "race": "휴먼",
+            "stats": {
+              "era": 3.45,
+              "strikeouts": 156,
+              "wins": 12,
+              "pitch_speed": 92,
+              "control": 76
+            },
+            "training_focus": "control",
+            "potential": 85,
+            "last_trained": "780-03-15"
+          },
+          {
+            "id": "sp_003",
+            "name": "리안 쉐도우",
+            "position": "SS",
+            "age": 24,
+            "race": "엘프",
+            "stats": {
+              "batting_avg": 0.27,
+              "home_runs": 8,
+              "rbi": 45,
+              "speed": 82,
+              "defense": 88
+            },
+            "training_focus": "batting",
+            "potential": 90,
+            "last_trained": "780-03-15"
+          },
+          {
+            "id": "sp_004",
+            "name": "브록 아이언",
+            "position": "C",
+            "age": 30,
+            "race": "드워프",
+            "stats": {
+              "batting_avg": 0.257,
+              "home_runs": 16,
+              "rbi": 58,
+              "speed": 45,
+              "defense": 92
+            },
+            "training_focus": "batting",
+            "potential": 82,
+            "last_trained": "780-03-15"
+          },
+          {
+            "id": "sp_005",
+            "name": "카렌 윙",
+            "position": "2B",
+            "age": 25,
+            "race": "하플링",
+            "stats": {
+              "batting_avg": 0.298,
+              "home_runs": 5,
+              "rbi": 38,
+              "speed": 90,
+              "defense": 81
+            },
+            "training_focus": "defense",
+            "potential": 86,
+            "last_trained": "780-03-15"
+          }
+        ],
+        "team_stats": {
+          "avg_batting": 0.275,
+          "avg_era": 3.45,
+          "team_speed": 85,
+          "team_defense": 84,
+          "morale": 75
+        }
+      },
+      "academy": {
+        "team_name": "아카데미 코치과",
+        "coaching_students": [
+          {
+            "id": "ac_001",
+            "name": "카일 윈저",
+            "position": "코치과",
+            "age": 8,
+            "race": "휴먼",
+            "stats": {
+              "str": 5,
+              "dex": 6,
+              "int": 15,
+              "cha": 8,
+              "baseball_knowledge": 105
+            },
+            "training_focus": "baseball_knowledge",
+            "potential": 99,
+            "last_trained": "780-03-15"
+          },
+          {
+            "id": "ac_002",
+            "name": "토비",
+            "position": "코치과",
+            "age": 9,
+            "race": "하플링",
+            "stats": {
+              "str": 4,
+              "dex": 7,
+              "int": 14,
+              "cha": 9,
+              "baseball_knowledge": 88
+            },
+            "training_focus": "baseball_knowledge",
+            "potential": 95,
+            "last_trained": "780-03-15"
+          }
+        ],
+        "players": [
+          {
+            "id": "ac_003",
+            "name": "에릴",
+            "position": "P (투수)",
+            "age": 62,
+            "race": "엘프",
+            "player_type": "선수",
+            "stats": {
+              "str": 6,
+              "dex": 16,
+              "int": 12,
+              "cha": 7,
+              "era": 2.78,
+              "strikeouts": 145,
+              "wins": 11,
+              "pitch_speed": 89,
+              "pitch_control": 94,
+              "curve_accuracy": 96
+            },
+            "training_focus": "pitch_control",
+            "potential": 96,
+            "last_trained": "780-03-15",
+            "team_affiliation": "아카데미 선수단 (프로 스카우트 대상)",
+            "signature_pitch": "엘프족 정교 커브",
+            "custom_program": "카일 윈저 전용 훈련 프로그램 적용 중"
+          }
+        ]
+      }
+    },
+    "baseball": {
+      "current_season": "preseason",
+      "lmb_standings": [],
+      "notable_games": [],
+      "top_teams": [
+        "하플랜드 스피드스터즈",
+        "아스테르 로열스",
+        "아이언 마이너스"
+      ]
+    },
+    "magic_science": {
+      "magic_level": "stable",
+      "tech_level": "industrial_revolution",
+      "recent_discoveries": []
+    },
+    "racial_relations": {
+      "overall": "peaceful",
+      "tensions": [],
+      "cooperation_events": ["다종족 야구 리그 운영"]
+    }
+  },
+  "simulation_flags": {
+    "tutorial_completed": true,
+    "first_meeting_toby": true,
+    "first_meeting_griffon": true,
+    "internship_offered": true,
+    "pro_coach_introduced": false,
+    "first_pro_game_watched": false,
+    "study_group_formed": true,
+    "met_eril": true,
+    "eril_became_player": true,
+    "custom_training_program_created": true,
+    "first_research_meeting_held": true
+  },
+  "notes": [
+    "780 년 3 월 15 일 현재, 카일은 인턴십 준비 중",
+    "레이몬드 감독과 면담 완료 - 관계 개선",
+    "다음 주요 목표: 프로팀 첫 출근 (4 월 1 일)",
+    "라프라시아 야구 연구회 창설 (멤버: 카일, 토비, 에릴)",
+    "에릴과의 공동 연구 시작 - 엘프족 커브와 데이터 분석 결합",
+    "프로팀 전략 운영 방식 학습 완료",
+    "에릴 - 코치과에서 선수로 전향 (투수, 프로 스카우트 대상)",
+    "에릴 전용 훈련 프로그램 개발 완료 (주 3 회 적용)",
+    "에릴 스카우트 관심도: 스피드스터즈 (매우 높음), 로열스 (높음)"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "date": "780-03-15",
+  "event": "에릴 선수 전향",
+  "time": "18:30",
+  "location": "하플랜드 로얄 야구 아카데미",
+  "details": {
+    "previous_role": "코치과 학생",
+    "new_role": "야구부 선수 (투수)",
+    "reason": "자신의 커브를 직접 마운드에서 던지고 싶음",
+    "support": ["카일 윈저", "토비"]
+  },
+  "player_profile": {
+    "name": "에릴",
+    "race": "엘프",
+    "age": 62,
+    "position": "P (투수)",
+    "signature_pitch": "엘프족 정교 커브",
+    "stats": {
+      "era": 2.85,
+      "strikeouts": 142,
+      "wins": 11,
+      "pitch_speed": 88,
+      "pitch_control": 93,
+      "curve_accuracy": 95
+    },
+    "potential": 96,
+    "scout_status": "프로팀 스카우트 관심 대상"
+  },
+  "future_prospects": {
+    "potential_teams": [
+      "하플랜드 스피드스터즈",
+      "아스테르 로열스",
+      "아이언 마이너스"
+    ],
+    "estimated_draft": "1 라운드 지명 가능",
+    "strengths": [
+      "엘프족 특유의 정교한 컨트롤",
+      "커브 정확도 95 (최상급)",
+      "멘탈 강함 (62 년 인생 경험)"
+    ],
+    "development_areas": [
+      "구속 향상 (현재 88 mph)",
+      "다양한 구종 습득",
+      "프로 무대 경험"
+    ]
+  },
+  "research_club_status": {
+    "name": "라프라시아 야구 연구회",
+    "members": [
+      {
+        "name": "카일 윈저",
+        "role": "코치 지망생",
+        "specialty": "데이터 분석, 현대 야구 전략"
+      },
+      {
+        "name": "토비",
+        "role": "코치 지망생",
+        "specialty": "세이버메트릭스, 통계 분석"
+      },
+      {
+        "name": "에릴",
+        "role": "선수 (투수)",
+        "specialty": "엘프족 커브, 투구 기술"
+      }
+    ],
+    "goal": "코치와 선수의 협력을 통한 야구 발전"
+  },
+  "quotes": {
+    "eril": "카일, 너는 코치로, 나는 선수로. 나중에 프로에서 만나자.",
+    "kyle": "에릴, 그거 좋은 생각이야! 네 커브는 프로에서도 통할 거야.",
+    "toby": "통계적으로 봐도 에릴의 컨트롤은 엘프족 역사상 최고 수준이야. 프로 스카우트들이 가만히 안 있을 거야."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "date": "780-03-15",
+  "time": "18:30 - 19:30",
+  "event": "에릴 전용 훈련 프로그램",
+  "location": "하플랜드 로얄 야구 아카데미 투구 연습장",
+  "coach": "카일 윈저",
+  "player": "에릴",
+  "program_name": "엘프족 커브 극대화 프로그램",
+  "training_menu": [
+    {
+      "name": "호흡 리듬 훈련",
+      "duration": "15 분",
+      "description": "엘프족 활쏘기 호흡법을 투구에 적용",
+      "result": "릴리스 타이밍 일관성 +10%"
+    },
+    {
+      "name": "손목 각도 미세 조정",
+      "duration": "20 분",
+      "description": "0.1 도 단위 손목 회전으로 커브 양 조절",
+      "result": "커브 정확도 95 → 96 (+1)"
+    },
+    {
+      "name": "데이터 기반 피드백",
+      "duration": "15 분",
+      "description": "카일의 분석 자료로 투구 폼 교정",
+      "result": "제구력 93 → 94 (+1)"
+    },
+    {
+      "name": "구속 향상 훈련",
+      "duration": "10 분",
+      "description": "코어 근력 활용 투구 메커니즘",
+      "result": "구속 88 → 89 mph (+1)"
+    }
+  ],
+  "stat_changes": {
+    "era": {
+      "before": 2.85,
+      "after": 2.78,
+      "change": "-0.07"
+    },
+    "strikeouts": {
+      "before": 142,
+      "after": 145,
+      "change": "+3"
+    },
+    "pitch_speed": {
+      "before": 88,
+      "after": 89,
+      "change": "+1 mph"
+    },
+    "pitch_control": {
+      "before": 93,
+      "after": 94,
+      "change": "+1"
+    },
+    "curve_accuracy": {
+      "before": 95,
+      "after": 96,
+      "change": "+1"
+    }
+  },
+  "coach_notes": {
+    "kyle_observation": "에릴은 엘프족 특유의 정밀한 신체 제어 능력이 있어. 여기에 데이터 분석을 결합하면 프로에서도 통할 거야.",
+    "strengths": [
+      "커브 정확도가 이미 프로 최상위권",
+      "멘탈이 강함 (62 년 인생 경험)",
+      "학습 의지가 높음"
+    ],
+    "areas_to_improve": [
+      "구속을 90 mph 대로 올리기",
+      "체인지업 등 추가 구종 습득",
+      "장기 이닝 소화력"
+    ],
+    "next_steps": [
+      "주 3 회 전용 훈련 지속",
+      "아마추어 리그에서 실전 경험 쌓기",
+      "프로 스카우트 초청 시범 경기 준비"
+    ]
+  },
+  "player_feedback": {
+    "eril_comment": "카일의 데이터 분석 덕분에 내 투구를 객관적으로 볼 수 있었어. 특히 손목 각도 교정이 큰 도움이 됐어.",
+    "motivation": "+15",
+    "trust_in_coach": "+20"
+  },
+  "scout_interest_update": {
+    "speedsters": "매우 높음 (레이몬드 감독 직접 관심)",
+    "royals": "높음 (스카우트 팀 파견 예정)",
+    "miners": "보통 (추가 관찰 필요)"
+  },
+  "program_effectiveness": {
+    "rating": "S (최상)",
+    "stat_growth_rate": "일반 훈련의 3 배",
+    "sustainability": "장기 적용 가능",
+    "recommendation": "계속 유지"
+  }
+}
